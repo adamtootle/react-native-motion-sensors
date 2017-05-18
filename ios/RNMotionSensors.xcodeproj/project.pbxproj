@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B3E7B58A1CC2AC0600A0062D /* RNMotionSensors.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNMotionSensors.m */; };
+		DBBE677F1ECA596900A448AA /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBBE677E1ECA596900A448AA /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +27,7 @@
 		134814201AA4EA6300B7C361 /* libRNMotionSensors.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNMotionSensors.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E7B5881CC2AC0600A0062D /* RNMotionSensors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNMotionSensors.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNMotionSensors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNMotionSensors.m; sourceTree = "<group>"; };
+		DBBE677E1ECA596900A448AA /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBBE677F1ECA596900A448AA /* CoreMotion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +56,16 @@
 				B3E7B5881CC2AC0600A0062D /* RNMotionSensors.h */,
 				B3E7B5891CC2AC0600A0062D /* RNMotionSensors.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
+				DBBE677D1ECA596900A448AA /* Frameworks */,
 			);
+			sourceTree = "<group>";
+		};
+		DBBE677D1ECA596900A448AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBBE677E1ECA596900A448AA /* CoreMotion.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,7 +209,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
-				"$(inherited)",
+					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",

@@ -5,7 +5,9 @@
 #import <React/RCTBridgeModule.h>
 #endif
 
-@interface RNMotionSensors : NSObject <RCTBridgeModule>
+#import <React/RCTEventEmitter.h>
+
+@interface RNMotionSensors : RCTEventEmitter <RCTBridgeModule>
 
 @end
   
